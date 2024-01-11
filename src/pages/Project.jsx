@@ -1,63 +1,129 @@
-import { useState, useEffect } from 'react';
-// import ResultList from './ResultList';
-
-// Import our search method
-import search from '../assets/utils/API';
-
-const SearchResultContainer = () => {
-  // Declare a new state variable, "results"
-  const [results, setResults] = useState([]);
-
-  // Method to get search results and set state
-  const searchGithub = async (query) => {
-    const { data } = await search(query);
-    setResults(data.data);
-    console.log("xxxxxxxxxxxxxxxxxxx"+results) //data.data is required to access the data
-  };
-
-  // We want to run this method when the component first loads so that we have images of kittens to display
-  // The second argument is the dependency array. This means that this method will only run when the component first loads
-  useEffect(() => {
-    searchGithub('anthogr45');
-  }, []);
-
-  return (
-    <div>
-      <h2>GitHub Repositories</h2>
-      <ul className="list-group">
-        {results.map((result) => (
-          <li className="list-group-item" key={result.id}>
-            <a href={result.html_url}>{result.name}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default SearchResultContainer;
-
 // import { useState, useEffect } from 'react';
-// import ResultList from './ResultList';
-// import search from '../utils/API';
+// import search from '../assets/utils/API';
+// import ProjectList from './ProjectResult';
 
 // const SearchResultContainer = () => {
 //   const [results, setResults] = useState([]);
 
-//   const searchGiphy = async (query) => {
-//     const { data } = await search(query);
-//     setResults(data.data);
+//   const searchGithub = async () => {
+//     const { data } = await search();
+//     setResults(data.data); 
 //   };
+ 
 
 //   useEffect(() => {
-//     searchGiphy('anthogr45');
+//     searchGithub();
 //   }, []);
 
 //   return (
 //     <div>
-//       <ResultList results={results} />
+//       <ProjectList results ={results} />
+
+
 //     </div>
 //   );
 // };
 
 // export default SearchResultContainer;
+
+import React, { useEffect, useState } from "react";
+import '../styles/Project.css';
+
+
+
+
+import { MarkGithubIcon } from '@primer/octicons-react';
+
+function UserRepositories({ }) {
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(() => {
+    const apiUrl = `https://api.github.com/users/anthogr45/repos`;
+
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        setRepositories(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+
+  return (
+    // <div>
+    //   <h2>GitHub Repositories</h2>
+    //   <ul>
+    //     {repositories.map((repo) => (
+    //       <li key={repo.id}>
+    //         <a href={repo.html_url}>{repo.name}</a>
+    //       </li>
+    //     ))}
+    //   </ul>
+    // </div>
+
+  //   <div>
+  //     <h2>GitHub Repositories</h2>
+      
+  //     <ul className="list-group">
+  //         {repositories.map((repo) => (
+  //          <li className="list-group-item" key={repo.id}>
+  //           <a href={repo.html_url}>{repo.name}</a>
+  //   </li>
+  // ))}
+  // </ul>
+  // </div>
+
+
+  // <div>
+  // <h2>My GitHub Repositories</h2>
+  // <div className="repos-container">
+  //   {repositories.map(repo => (
+  //     <div key={repo.id} className="repo-card">
+  //       <h3>{repo.name}</h3>
+  //       <p>{repo.description}</p>
+  //       <a href={repo.html_url} target="_blank" rel="noopener noreferrer"><MarkGithubIcon size={25} />View on GitHub</a>
+  //     </div>
+  //   ))}
+  // </div>
+  // </div>
+  
+//   <div>
+//   <h2>My GitHub Repositories</h2>
+//   <div className="repos-container">
+//     {repositories.map(repo => (
+//       <div key={repo.id} className="card text-bg-info" style={{ maxWidth: '28rem' }}>
+//         <div className="card-header">{repo.name}</div>
+//         <div className="card-body">
+//           <p className="card-text">{repo.description}</p>
+//           <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+//             <MarkGithubIcon size={25} />View on GitHub
+//           </a>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+// </div>
+
+<div>
+  <h2>My GitHub Repositories</h2>
+  <div className="repos-container">
+    {repositories.map(repo => (
+      <div key={repo.id} className="card text-bg-info repos-container"  style={{ maxWidth: '28rem', marginBottom: '1rem' }}>
+        <div className="card-header header-font">{repo.name}</div>
+        <div className="card-body">
+          <p className="card-text">{repo.description}</p>
+          <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+            <MarkGithubIcon size={25} />View on GitHub
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+  );
+}
+
+export default UserRepositories;

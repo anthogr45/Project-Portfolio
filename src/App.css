@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.repos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}

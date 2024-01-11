@@ -1,0 +1,15 @@
+.repos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .header-font {
+
+    font-size: 17px;
+    text-underline-offset: true;
+    font-weight: bolder;
+    font-style: italic;
+    color: brown;
+
+  }
