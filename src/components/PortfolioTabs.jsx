@@ -19,7 +19,10 @@ function PortfolioTabs() {
                 <Link className={`nav-link ${currentPage === '/About' ? 'active' : ''}`} to="/About">About Me</Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${currentPage === '/Project' ? 'active' : ''}`} to="/Project">Project Portfolio</Link>
+                <Link className={`nav-link ${currentPage === '/ProjectPortfolio' ? 'active' : ''}`} to="/ProjectPortfolio">Project Portfolio</Link>
+              </li>
+              <li className="nav-item">
+                <Link className={`nav-link ${currentPage === '/ProjectGit' ? 'active' : ''}`} to="/ProjectGit">Github</Link>
               </li>
               <li className="nav-item">
                 <Link className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`} to="/Contact">Contact</Link>

@@ -13,3 +13,20 @@
     color: brown;
 
   }
+
+  .top-margin {
+    margin-top: '60';
+  }
+
+  .card-image {
+    width: 150px;
+    height: 80px;
+  }
+
+  .card-img-container {
+    padding: 20px;
+  }
+
+  .gap{
+    gap: 1rem;
+  }
