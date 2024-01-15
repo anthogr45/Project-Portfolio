@@ -30,3 +30,42 @@
   .gap{
     gap: 1rem;
   }
+
+  .page-container {
+    background-color: black;
+  }
+
+  .card-size {
+    width: 600px;
+    height:600px;
+    margin-top: '200';
+
+  }
+
+  .text {
+
+    font-size: 17px;
+    text-underline-offset: true;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(31, 19, 187);
+    
+
+  }
+
+  .font {
+
+    font-size: 22px;
+    text-underline-offset: true;
+    font-weight: bolder;
+    font-style: italic;
+    color: brown;
+
+  }
+
+  .navbar img {
+    width: 45px; 
+    height: 60px; 
+    float:left;
+  }
+  

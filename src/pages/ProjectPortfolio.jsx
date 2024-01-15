@@ -45,7 +45,7 @@ import { MarkGithubIcon } from '@primer/octicons-react';
 
   const Portfolio = () => {
     return (
-      <div className="container mt-5">
+      <div className="container mt-5 " style={{  marginTop: '100px' }} >
       <div className="row justify-content-between gap ">
         {project.map((project, index) => (
           <div className="col-md-4 card repos-container top-margin container mt-5 gap text-center" key={index}>

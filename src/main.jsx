@@ -18,15 +18,16 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <Error />,
+    defaultRoute: <About />, // Set the default route to '/About'
     children: [
       {
         index: true,
         element: <About />,
       },
-      // {
-      //   path: '/About',
-      //   element: <About />,
-      // },
+      {
+        path: '/About',
+        element: <About />,
+      },
       {
         path: '/ProjectPortfolio',
         element: <ProjectPort />,
