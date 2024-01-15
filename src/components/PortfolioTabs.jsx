@@ -30,11 +30,14 @@ function PortfolioTabs() {
               <li className="nav-item">
                 <Link className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`} to="/Contact">Contact</Link>
               </li>
+              <li className="nav-item">
+                <Link className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`} to="/Resume">Resume</Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      </div>
+     </div>
       
    
   )}
@@ -64,8 +67,6 @@ function PortfolioTabs() {
 
 
 } */
-
-
 
 
 

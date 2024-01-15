@@ -45,10 +45,10 @@ import { MarkGithubIcon } from '@primer/octicons-react';
 
   const Portfolio = () => {
     return (
-      <div className="container mt-5 " style={{  marginTop: '100px' }} >
+      <div className="container mt-5 " style={{  marginTop: '150px', marginBottom: '150px' }} >
       <div className="row justify-content-between gap ">
         {project.map((project, index) => (
-          <div className="col-md-4 card repos-container top-margin container mt-5 gap text-center" key={index}>
+          <div className="col-md-4 card repos-container top-margin container mt-5 gap text-center" key={index} >
             {/* <div className="card"> */}
             <div className="card-img-container ">
               <img src={project.imagePath} className="card-img-top card-image" alt={project.name} />
@@ -61,7 +61,7 @@ import { MarkGithubIcon } from '@primer/octicons-react';
             </div>
           </div>
         ))}
-        {/* <div className="col-md-4"></div> */}
+        {/* <div className="col-md-4"></div>   marginBottom: '20px'*/}
       </div>
     </div>
     );

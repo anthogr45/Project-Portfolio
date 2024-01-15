@@ -20,7 +20,7 @@ function UserRepositories({ }) {
   }, []);
 
   return (
-    <div className="top-margin">
+    <div className="top-margin" style={{  marginTop: '100px', marginBottom: '150px' }}>
        <h2>My GitHub Repositories</h2>
        <div className="repos-container ">
          {repositories.map(repo => (
