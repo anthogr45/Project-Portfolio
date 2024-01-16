@@ -8,7 +8,7 @@ import Weather from '../assets/images/Weather.png';
     {
        name: "WeatherDashboard",
        url: "https://anthogr45.github.io/WeatherDashboard/",
-       imagePath: Weather,
+       imagePath: "../src/assets/images/Weather.png",
        githublink: "https://github.com/anthogr45/WeatherDashboard"
     },
     {
