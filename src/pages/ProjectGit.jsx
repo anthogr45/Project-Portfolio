@@ -21,7 +21,7 @@ function UserRepositories({ }) {
 
   return (
     <div className="top-margin" style={{  marginTop: '100px', marginBottom: '150px' }}>
-       <h2>My GitHub Repositories</h2>
+       <h2 >My GitHub Repositories</h2>
        <div className="repos-container ">
          {repositories.map(repo => (
           <div key={repo.id} className="card text-bg-info repos-container top-margin top-margin"  style={{ maxWidth: '28rem', marginBottom: '1rem' }}>

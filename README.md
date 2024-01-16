@@ -1,8 +1,61 @@
-# React + Vite
+# React: My Project Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Portfolio
 
-Currently, two official plugins are available:
+Being a web developer means being part of a community. This is my Project Portfolio which was built using React. The application comprices the following: About me, Top six project and the access to the deployment portals and the respective Github repositories , Contact details, My resume and skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## User Acceptance Criteria
+
+```md
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+```
+
+## Requirements to run the code and to get the outputs
+
+- VS Code, Chrome, Mozila, IE.
+- OS - MS Windows, MAC or any other OS which supports GUI browser display.
+
+## Usage
+
+Screen layout is available in the repository path: 
+
+
+![image info](src/assets/images/Screenshot%202024-01-15%20235812.png)
+
+## Credits
+
+- Lecturers: Gurneesh Singh, Laura Cole and Dani Chankhour for teaching us the modules.
+- Tutor Dru Sanchez for guiding me on the module.
+
+  
+## Features Links
+
+- Application deployment (Heroku) URL: https://stormy-brushlands-38378-2a25ffa26458.herokuapp.com
+- Github Repository URL: https://github.com/anthogr45/Project-Portfolio
+  

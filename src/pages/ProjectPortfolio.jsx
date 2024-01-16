@@ -45,23 +45,20 @@ import { MarkGithubIcon } from '@primer/octicons-react';
 
   const Portfolio = () => {
     return (
-      <div className="container mt-5 " style={{  marginTop: '150px', marginBottom: '150px' }} >
-      <div className="row justify-content-between gap ">
+      <div className="container mt-5" style={{ marginTop: '150px', marginBottom: '150px' }}>
+      <div className="row justify-content-between gap">
         {project.map((project, index) => (
-          <div className="col-md-4 card repos-container top-margin container mt-5 gap text-center" key={index} >
-            {/* <div className="card"> */}
-            <div className="card-img-container ">
+          <div className="col-md-4 col-sm-6 card repos-container top-margin container mt-5 gap text-center" key={index}>
+            <div className="card-img-container">
               <img src={project.imagePath} className="card-img-top card-image" alt={project.name} />
             </div>
             <div className="card-body">
-              <h5 className="card-title  header-font">{project.name}</h5>
+              <h5 className="card-title header-font">{project.name}</h5>
               <p className="card-text">Check out the project <a rel="noopener noreferrer" href={project.url}>here</a></p>
-              <a href={project.githublink}  target="_blank" rel="noopener noreferrer" > <MarkGithubIcon size={25} /> GitHub</a>
-            {/* </div> */}
+              <a href={project.githublink} target="_blank" rel="noopener noreferrer"><MarkGithubIcon size={25} /> GitHub</a>
             </div>
           </div>
         ))}
-        {/* <div className="col-md-4"></div>   marginBottom: '20px'*/}
       </div>
     </div>
     );

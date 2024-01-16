@@ -69,19 +69,6 @@
     float:left;
   }
   
-
-  .csocial-medial a {
-    margin-right: 130px; /* adjust the spacing between icons */
-  }
-  
-  .csocial-medial .spacer {
-    display: inline-block;
-    width: 150px; /* adjust the width of the spacer */
-  }
-
-  .csocial-medial i {
-    font-size: 40px; /* adjust the font size to increase the icon size */
-    /* or */
-    width: 40px; /* adjust the width to increase the icon size */
-    height: 35px; /* adjust the height to increase the icon size */
+  .spacer {
+    margin-right: 10px; 
   }
