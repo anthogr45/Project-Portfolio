@@ -2,12 +2,13 @@
 
 import '../styles/Project.css';
 import { MarkGithubIcon } from '@primer/octicons-react';
+import Weather from '../assets/images/Weather.png';
 
   var project = [
     {
        name: "WeatherDashboard",
        url: "https://anthogr45.github.io/WeatherDashboard/",
-       imagePath: "../src/assets/images/Weather.png",
+       imagePath: Weather,
        githublink: "https://github.com/anthogr45/WeatherDashboard"
     },
     {
