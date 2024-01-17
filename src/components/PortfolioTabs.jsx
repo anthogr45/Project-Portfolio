@@ -1,22 +1,26 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import AGAvata from '../assets/images/AGAvata.png';
+import '../styles/Project.css';
 
 function PortfolioTabs() {
   const currentPage = useLocation().pathname;
 
-  
-
   return (
-    <div >
+    <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style={{ marginBottom: '100px' }}>
         <div className="container">
-        <li><a href="#"><img src="../src/assets/images/AG Avata.png" alt="Male Avatar" className='navbar img'/></a></li>
-          <Link className="navbar-brand" to="/">  Anthony Gooneratne, Projrct Portfolio</Link>
+          <li>
+            <a href="#">
+              <img src={AGAvata} alt="Male Avatar" className='navbar img' />
+            </a>
+          </li>
+          <Link className="navbar-brand" to="/">Anthony Gooneratne, Project Portfolio</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className=" collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className={`nav-link ${currentPage === '/About' ? 'active' : ''}`} to="/About">About Me</Link>
@@ -37,11 +41,9 @@ function PortfolioTabs() {
           </div>
         </div>
       </nav>
-     </div>
-      
-   
-  )}
-
+    </div>
+  );
+}
 
 export default PortfolioTabs;
 

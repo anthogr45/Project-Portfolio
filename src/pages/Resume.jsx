@@ -1,4 +1,5 @@
 import React from 'react';
+import AnthonyResume from '../assets/files/AnthonyResume.pdf';
 
 const PortfolioPage = () => {
   return (
@@ -7,7 +8,7 @@ const PortfolioPage = () => {
     <div className="col-md-6">
       <h2>Resume</h2>
       <p>
-        Download my resume <a href="../src/assets/files/Anthony G Resume.pdf" download>here</a>.
+        Download my resume <a href={AnthonyResume} download>here</a>.
       </p>
       {/* <h2>Skills: </h2> */}
     </div>

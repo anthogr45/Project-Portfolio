@@ -56,6 +56,6 @@ Screen layout is available in the repository path:
   
 ## Features Links
 
-- Application deployment (Heroku) URL: https://stormy-brushlands-38378-2a25ffa26458.herokuapp.com
+- Application deployment (Netlify) URL: https://anthonygr45projectportfolio.netlify.app
 - Github Repository URL: https://github.com/anthogr45/Project-Portfolio
   

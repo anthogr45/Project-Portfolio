@@ -1,12 +1,12 @@
 
-
-import '../styles/Project.css';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import Weather from '../assets/images/Weather.png';
-import TextEditorAnthoG from '../assets/images/TextEditorAnthoG.png'
-import DailyPlanner from '../assets/images/DailyPlanner.png'
-// import 
-
+import TextEditorAnthoG from '../assets/images/TextEditorAnthoG.png';
+import DailyPlanner from '../assets/images/DailyPlanner.png';
+import Notetaker from '../assets/images/Notetaker.png';
+// import DailyPlanner from '../src/assets/images/DailyPlanner.png';
+import Techblog from '../assets/images/Techblog.png';
+import '../styles/Project.css';
 
   var project = [
     {
@@ -27,24 +27,24 @@ import DailyPlanner from '../assets/images/DailyPlanner.png'
       imagePath: DailyPlanner,
       githublink: "https://github.com/anthogr45/project1-purpleTurtle?tab=readme-ov-file"
     },
-    // {
-    //   name: "Note Taker",
-    //   url: "https://floating-scrubland-52573-663844fb84ec.herokuapp.com/",
-    //   imagePath: "../src/assets/images/Notetaker.png",
-    //   githublink: "https://github.com/anthogr45/NoteTaker?tab=readme-ov-file"
-    // },
-    // {
-    //   name: "Dailyplanner",
-    //   url: "https://anthogr45.github.io/Dailyplanner/",
-    //   imagePath: "../src/assets/images/DailyPlanner.png",
-    //   githublink: "https://github.com/anthogr45/Dailyplanner"
-    // },
-    // {
-    //   name: "Antho-G: Tech-Blog",
-    //   url: "https://fierce-ridge-25865-7ffb2efa6e88.herokuapp.com",
-    //   imagePath: "../src/assets/images/Techblog.png",
-    //   githublink: "https://github.com/anthogr45/Tech-Blog?tab=readme-ov-file"
-    // },
+    {
+      name: "Note Taker",
+      url: "https://floating-scrubland-52573-663844fb84ec.herokuapp.com/",
+      imagePath: Notetaker,
+      githublink: "https://github.com/anthogr45/NoteTaker?tab=readme-ov-file"
+    },
+    {
+      name: "Dailyplanner",
+      url: "https://anthogr45.github.io/Dailyplanner/",
+      imagePath: DailyPlanner,
+      githublink: "https://github.com/anthogr45/Dailyplanner"
+    },
+    {
+      name: "Antho-G: Tech-Blog",
+      url: "https://fierce-ridge-25865-7ffb2efa6e88.herokuapp.com",
+      imagePath: Techblog,
+      githublink: "https://github.com/anthogr45/Tech-Blog?tab=readme-ov-file"
+    },
 
   ]
 
